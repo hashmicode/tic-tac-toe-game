@@ -25,7 +25,12 @@ public class Board {
         return false;
     }
 
+    public char getSymbolAt(int row, int col) {
+        return board[row][col];
+    }
+
     public void printBoard() {
+        System.out.println("Current Board State:");
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 System.out.print(board[i][j] + " ");
